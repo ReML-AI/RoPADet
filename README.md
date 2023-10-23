@@ -47,13 +47,13 @@ Profile encoder pre-training:
 fairseq-hydra-train task.data=$pre-train_data --config-dir examples/RoPADet/config/pretraining --config-name discriminative
 ```
 
-### Profile encoding:
+### Profile encoding
 
 ```
 python examples/RoPADet/profiles_gen.py data/ --path $model_path
 ```
 
-### Self-training:
+### Self-training
 
 In each iteration, run:
 ```
